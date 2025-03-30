@@ -27,7 +27,7 @@ while(ind1<length1 && ind2<length2)
     {
         arr[s++]=arr2[ind2++];
     }
-    else if(arr1[ind1]<arr2[ind2])
+    else if(arr1[ind1]<=arr2[ind2])
     {
         arr[s++]=arr1[ind1++];
     }
@@ -59,8 +59,8 @@ void mergesort(int *arr,int s,int e)
 
 int main()
 {
-    int arr[]={5,4,3,2,1};
-    int n=5;
+    int arr[]={5,5,4,3,2,1};
+    int n=6;
     mergesort(arr,0,n-1);
     for(int i=0;i<n;i++)
     {
